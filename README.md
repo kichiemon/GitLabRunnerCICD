@@ -2,6 +2,10 @@
 
 GitLab CI/CDを試せるリポジトリです。
 
+GitLabのリポジトリにミラーしてCI/CDを動かしています。    
+
+[kichiemon/GitLabRunnerCICD](https://gitlab.com/kichiemon/GitLabRunnerCICD)
+
 ## Required
 
 - Xcode10.2.1
