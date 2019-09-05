@@ -1,0 +1,18 @@
+stages:
+ - test
+
+test:
+  stage: test
+  before_script:
+    - "bundle install --path vendor/bundle --jobs=4"
+  variables:
+    LC_ALL: en_US.UTF-8
+    LANG: en_US.UTF-8
+  script:
+    - "bundle exec fastlane ios tests"
+  artifacts:
+    reports:
+      junit: fastlane/report.xml
+  tags:
+    - ios
+
